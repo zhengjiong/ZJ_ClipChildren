@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    android:background="#b5f100"
+    >
+
+    <!--
+    android:clipChildren表示是否限制子View在其范围内，默认为true。
+
+    這裡根節點,和viewpager都必須設置android:clipChildren="false"
+    1.根節點設置成false,是為了讓整個LinearLayout都可以給viewpager滑動,
+    而不是限制在250dp範圍內
+
+    2.viewpager設置成false, 是為了在滑動停止后能顯示出後面和前面的圖,
+    如不設置,在滑動結束后只能看到當前這一屏
+    -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:clipChildren="false"
+        android:background="#bcbcbc"
+        />
+    <!--
+    如果在Viewpager中設置了android:paddingTop="20dp",
+    必須設置android:clipToPadding="false",
+    不然只會顯示一屏
+    -->
+</LinearLayout>

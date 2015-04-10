@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/TransparentActionBar</item>
+
+        <!--讓ActionBar的空間可以被下面的listview佔用-->
+        <item name="android:windowActionBarOverlay">true</item>
+
+        <!--去掉Actionbar最底部的陰影-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+    </style>
+
+
+    <style name="AppTheme" parent="BaseTheme">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--半透明藍色ActionBar-->
+    <style name="TransparentActionBar" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">#b200b5f1</item>
+        <item name="android:titleTextStyle">@style/CustomTitleTextStyle</item>
+    </style>
+
+    <!--ActionBar Title的樣式-->
+    <style name="CustomTitleTextStyle" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>

@@ -1,0 +1,1 @@
+android:clipToPadding,android:clipChildren 使用demo

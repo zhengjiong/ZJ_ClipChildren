@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="BaseTheme">
+    </style>
+
+    <!--半透明藍色ActionBar-->
+    <style name="TransparentActionBar" parent="android:Widget.Material.ActionBar">
+        <item name="android:background">#b200b5f1</item>
+        <item name="android:titleTextStyle">@style/CustomTitleTextStyle</item>
+    </style>
+
+    <!--ActionBar Title的樣式-->
+    <style name="CustomTitleTextStyle" parent="android:TextAppearance.Material.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>
